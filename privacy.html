@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibberish - Privacy Policy</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0b111e;
+            --card-bg: #152033;
+            --card-border: #233554;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-yellow: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        h1, h2, h3, .logo {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(11, 17, 30, 0.8);
+        }
+
+        .logo {
+            font-size: 28px;
+            letter-spacing: -0.5px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "🎸";
+            font-size: 24px;
+            -webkit-text-fill-color: initial;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 24px;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color var(--transition-speed);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-primary);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .policy-content {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            background: linear-gradient(180deg, #ffffff 50%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .last-updated {
+            color: var(--accent-blue);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(35, 53, 84, 0.5);
+            padding-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        ul {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            margin-left: 24px;
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .alert-box {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            padding: 16px;
+            border-radius: 4px;
+            margin: 24px 0;
+        }
+
+        .alert-box p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        footer {
+            border-top: 1px solid var(--card-border);
+            padding: 40px 8% 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 16px;
+            transition: color var(--transition-speed);
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px;
+            }
+            nav a {
+                margin: 0 12px;
+            }
+            .policy-content {
+                padding: 24px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Gibberish</a>
+        <nav>
+            <a href="index.html">Support</a>
+            <a href="privacy.html" class="active">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="policy-content">
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">Last Updated: June 12, 2026</div>
+
+            <p>At Gibberish, we respect your privacy and are committed to protecting any personal data we collect. This Privacy Policy describes how we collect, use, and share information when you use the Gibberish iOS Application (the "App").</p>
+
+            <h2>1. Information We Collect</h2>
+            <p>To provide you with the chord training features and a personalized ad-supported experience, the App processes the following categories of data:</p>
+            <ul>
+                <li><strong>Device Identifiers (Tracking Data):</strong> If you grant permission via the App Tracking Transparency (ATT) prompt, we collect your device's advertising identifier (IDFA) to serve relevant, personalized third-party ads.</li>
+                <li><strong>Application Usage State (UserDefaults):</strong> We store your chord practice progress, switch test scores, streaks, saved songbook details, and app preferences locally on your device using Apple's <code>UserDefaults</code>. This information stays on your device and is not sent to our servers.</li>
+                <li><strong>File Metadata (Timestamps):</strong> Used locally by the app database (SwiftData) to keep track of when you practiced specific chords or saved files.</li>
+            </ul>
+
+            <div class="alert-box">
+                <p>🔒 Privacy First: All of your guitar practice history, switch test scores, and custom song data remain strictly on your local device. We do not maintain an external server database of your training sessions.</p>
+            </div>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the collected information for the following purposes:</p>
+            <ul>
+                <li>To maintain your local training history, streaks, and customization options.</li>
+                <li>To serve advertisements through third-party ad networks (such as Google AdMob) to support the development of the App.</li>
+                <li>To analyze ad delivery and verify ad actions.</li>
+            </ul>
+
+            <h2>3. Third-Party Services and Tracking</h2>
+            <p>Our app integrates third-party advertising SDKs that contact tracking domains including:</p>
+            <ul>
+                <li><code>doubleclick.net</code></li>
+                <li><code>googleads.g.doubleclick.net</code></li>
+                <li><code>adservice.google.com</code></li>
+            </ul>
+            <p>If you opt-out of tracking via the iOS App Tracking Transparency (ATT) prompt, we disable personalized tracking, and the ad SDK will only show non-personalized ads without collecting your IDFA.</p>
+
+            <h2>4. Data Retention and Deletion</h2>
+            <p>Because your practice progress, saved songbooks, and scores are stored locally in your device's sandbox, we do not have access to delete or modify this data. If you wish to delete all local progress data, you can do so at any time by uninstalling the App from your device.</p>
+
+            <h2>5. Children's Privacy</h2>
+            <p>Our App is designed to help anyone learn the guitar. We do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal data, please contact us at the address below so we can take immediate action.</p>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:privacy@gibberishapp.com" style="color: var(--accent-blue); text-decoration: none;">privacy@gibberishapp.com</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p>&copy; 2026 Gibberish App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
