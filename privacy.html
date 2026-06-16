@@ -211,15 +211,17 @@
     <main class="container">
         <article class="policy-content">
             <h1>Privacy Policy</h1>
-            <div class="last-updated">Last Updated: June 12, 2026</div>
+            <div class="last-updated">Last Updated: June 16, 2026</div>
 
             <p>At Gibber, we respect your privacy and are committed to protecting any personal data we collect. This Privacy Policy describes how we collect, use, and share information when you use the Gibber iOS Application (the "App").</p>
 
             <h2>1. Information We Collect</h2>
-            <p>To provide you with the chord training features and a personalized ad-supported experience, the App processes the following categories of data:</p>
+            <p>To provide chord training features and an ad-supported experience, the App and its third-party SDKs may process the following categories of data:</p>
             <ul>
                 <li><strong>Device Identifiers (Tracking Data):</strong> If you grant permission via the App Tracking Transparency (ATT) prompt, we collect your device's advertising identifier (IDFA) to serve relevant, personalized third-party ads.</li>
-                <li><strong>Application Usage State (UserDefaults):</strong> We store your chord practice progress, switch test scores, streaks, saved songbook details, and app preferences locally on your device using Apple's <code>UserDefaults</code>. This information stays on your device and is not sent to our servers.</li>
+                <li><strong>Application Usage State:</strong> We store your chord practice progress, switch test scores, streaks, saved songbook details, and app preferences locally on your device using app storage and the local app database. This information stays on your device and is not sent to our servers.</li>
+                <li><strong>Ad and App Interaction Data:</strong> Google advertising SDKs may process product interaction, advertising data, performance data, coarse location, and other diagnostic data to serve ads, measure ad delivery, prevent abuse, and improve ad reliability.</li>
+                <li><strong>Crash and Diagnostic Data:</strong> Firebase and Google SDKs may process crash data, performance data, and other diagnostic data to help us understand app reliability and troubleshoot issues.</li>
                 <li><strong>File Metadata (Timestamps):</strong> Used locally by the app database (SwiftData) to keep track of when you practiced specific chords or saved files.</li>
             </ul>
 
@@ -233,16 +235,18 @@
                 <li>To maintain your local training history, streaks, and customization options.</li>
                 <li>To serve advertisements through third-party ad networks (such as Google AdMob) to support the development of the App.</li>
                 <li>To analyze ad delivery and verify ad actions.</li>
+                <li>To diagnose crashes, performance problems, and SDK reliability issues.</li>
             </ul>
 
             <h2>3. Third-Party Services and Tracking</h2>
-            <p>Our app integrates third-party advertising SDKs that contact tracking domains including:</p>
+            <p>Our app integrates Google AdMob, Google User Messaging Platform, Firebase Analytics, Firebase Remote Config, and Firebase Crashlytics. These SDKs may collect or process device identifiers, product interaction, advertising data, coarse location, performance data, crash data, and other diagnostic data according to their own privacy disclosures.</p>
+            <p>Advertising SDKs may contact tracking domains including:</p>
             <ul>
                 <li><code>doubleclick.net</code></li>
                 <li><code>googleads.g.doubleclick.net</code></li>
                 <li><code>adservice.google.com</code></li>
             </ul>
-            <p>If you opt-out of tracking via the iOS App Tracking Transparency (ATT) prompt, we disable personalized tracking, and the ad SDK will only show non-personalized ads without collecting your IDFA.</p>
+            <p>If you opt out of tracking via the iOS App Tracking Transparency (ATT) prompt, iOS does not provide your IDFA to the App for cross-app tracking. Ads may still be served using contextual, limited, or non-personalized signals.</p>
 
             <h2>4. Data Retention and Deletion</h2>
             <p>Because your practice progress, saved songbooks, and scores are stored locally in your device's sandbox, we do not have access to delete or modify this data. If you wish to delete all local progress data, you can do so at any time by uninstalling the App from your device.</p>
